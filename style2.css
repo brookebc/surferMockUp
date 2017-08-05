@@ -14,9 +14,28 @@ header {
 	background-size: 140%;
 	/*margin: 0px auto auto auto;*/
 	/*padding: 0px auto auto 90px;*/
-	height: 525px;
+	height: 30em;
 	/*color: white;*/
 }
+
+header > p {
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 480px) {
+	.multiplebgs header {
+		height:16em;
+	}
+
+ 	header {
+ 		width:100%;
+		background:url(images/wave-top.jpg);
+		background-position: -250px -100px;
+		background-repeat: no-repeat;
+		background-size: 140%;
+		height: 30em;
+ 	}
+ }
 
 .logo {
 	margin: 0px auto auto 90px;
@@ -37,6 +56,13 @@ header {
 .header-nav > ul > li > a {
 	display: inline-block;
 	list-style: none;
+}
+
+/* end of header */
+
+@media only screen and (max-width: 480px) {
+
+
 }
 
 article {
@@ -239,3 +265,4 @@ a.foo:hover {
   background-color: #192D57;
   opacity: 0.8;
   }
+
